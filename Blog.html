@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <!-- LOGO -->
+        <div class="logo">
+            <a href="My Blog.html">NJABINI HEALTH CENTRE</a></div>
+        <!-- NAVIGATION MENU -->
+        <ul class="nav-links">
+            <!-- USING CHECKBOX HACK -->
+            <input type="checkbox" id="checkbox_toggle" />
+            <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+            <!-- NAVIGATION MENUS -->
+            <div class="menu">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Blog.html">Blog</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="website.html">website</a></li>
+            </div>
+        </ul>
+    </nav>
+
+
+
+    <style>
+        /* NAVBAR STYLING STARTS */
+        
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: teal;
+            color: #fff;
+        }
+        
+        .nav-links a {
+            color: #fff;
+        }
+        /* LOGO */
+        
+        .logo {
+            font-size: 32px;
+        }
+        /* NAVBAR MENU */
+        
+        .menu {
+            display: flex;
+            gap: 1em;
+            font-size: 18px;
+        }
+        
+        .menu li:hover {
+            background-color: #4c9e9e;
+            border-radius: 5px;
+            transition: 0.3s ease;
+        }
+        
+        .menu li {
+            padding: 5px 14px;
+        }
+        /* DROPDOWN MENU */
+        
+        .services {
+            position: relative;
+        }
+        
+        .dropdown {
+            background-color: rgb(1, 139, 139);
+            padding: 1em 0;
+            position: absolute;
+            /*WITH RESPECT TO PARENT*/
+            display: none;
+            border-radius: 8px;
+            top: 35px;
+        }
+        
+        .dropdown li+li {
+            margin-top: 10px;
+        }
+        
+        .dropdown li {
+            padding: 0.5em 1em;
+            width: 8em;
+            text-align: center;
+        }
+        
+        .dropdown li:hover {
+            background-color: #4c9e9e;
+        }
+        
+        .services:hover .dropdown {
+            display: block;
+        }
+        /*RESPONSIVE NAVBAR MENU STARTS*/
+        /* CHECKBOX HACK */
+        
+        input[type=checkbox] {
+            display: none;
+        }
+        /*HAMBURGER MENU*/
+        
+        .hamburger {
+            display: none;
+            font-size: 24px;
+            user-select: none;
+        }
+        /* APPLYING MEDIA QUERIES */
+        
+        @media (max-width: 768px) {
+            .menu {
+                display: none;
+                position: absolute;
+                background-color: teal;
+                right: 0;
+                left: 0;
+                text-align: center;
+                padding: 16px 0;
+            }
+            .menu li:hover {
+                display: inline-block;
+                background-color: #4c9e9e;
+                transition: 0.3s ease;
+            }
+            .menu li+li {
+                margin-top: 12px;
+            }
+            input[type=checkbox]:checked~.menu {
+                display: block;
+            }
+            .hamburger {
+                display: block;
+            }
+            .dropdown {
+                left: 50%;
+                top: 30px;
+                transform: translateX(35%);
+            }
+            .dropdown li:hover {
+                background-color: #4c9e9e;
+            }
+        }
+    </style>
+    <br>
+    <H1>Njabini Health Centre</H1>
+    <p>Njabini Health Centre is a facility located at Njabini Kiburu Ward which Serves as A level 3 hospital.</p>
+    <p>The hospital services are listed in the list below</p>
+
+    <br>
+    <h3><b>Services in Njabini Health Centre</b></h3>
+    <ol>
+        <li>Martanete Services</li>
+        <li>laboratory services</li>
+        <li>ward Administration</li>
+        <li>Clinic Services</li>
+    </ol>
+    <br>
+    <img src="/home/francis/Documents/njabini health centre/img/IMG_20220715_112214_550.jpg" width="400" height="400" alt="">
+    <img src="/home/francis/Documents/njabini health centre/img/IMG_20220715_112329_870.jpg" width="400" height="400" alt="">
+    <img src="/home/francis/Documents/njabini health centre/img/IMG_20220715_112058_646.jpg" width="400" height="400" alt="">
+
+    <footer>
+        <p class="copyright">&copy;Copyright @Dr.Francis 2022</p>
+        <style>
+            footer {
+                position: relative;
+                height: 50px;
+                width: 100%;
+                background-color: gray;
+            }
+            
+            p.copyright {
+                position: absolute;
+                width: 100%;
+                color: #fff;
+                line-height: 40px;
+                font-size: 0.7em;
+                text-align: center;
+                bottom: 0;
+            }
+        </style>
+        </style>
+</body>
+
+</html>

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <nav class="navbar">
+        <!-- LOGO -->
+        <div class="logo">
+            <a href="My Blog.html">NJABINI HEALTH CENTRE</a></div>
+        <!-- NAVIGATION MENU -->
+        <ul class="nav-links">
+            <!-- USING CHECKBOX HACK -->
+            <input type="checkbox" id="checkbox_toggle" />
+            <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+            <!-- NAVIGATION MENUS -->
+            <div class="menu">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Blog.html">Blog</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="website.html">website</a></li>
+            </div>
+        </ul>
+    </nav>
+
+
+
+    <style>
+        /* NAVBAR STYLING STARTS */
+        
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: teal;
+            color: #fff;
+        }
+        
+        .nav-links a {
+            color: #fff;
+        }
+        /* LOGO */
+        
+        .logo {
+            font-size: 32px;
+        }
+        /* NAVBAR MENU */
+        
+        .menu {
+            display: flex;
+            gap: 1em;
+            font-size: 18px;
+        }
+        
+        .menu li:hover {
+            background-color: #4c9e9e;
+            border-radius: 5px;
+            transition: 0.3s ease;
+        }
+        
+        .menu li {
+            padding: 5px 14px;
+        }
+        /* DROPDOWN MENU */
+        
+        .services {
+            position: relative;
+        }
+        
+        .dropdown {
+            background-color: rgb(1, 139, 139);
+            padding: 1em 0;
+            position: absolute;
+            /*WITH RESPECT TO PARENT*/
+            display: none;
+            border-radius: 8px;
+            top: 35px;
+        }
+        
+        .dropdown li+li {
+            margin-top: 10px;
+        }
+        
+        .dropdown li {
+            padding: 0.5em 1em;
+            width: 8em;
+            text-align: center;
+        }
+        
+        .dropdown li:hover {
+            background-color: #4c9e9e;
+        }
+        
+        .services:hover .dropdown {
+            display: block;
+        }
+        /*RESPONSIVE NAVBAR MENU STARTS*/
+        /* CHECKBOX HACK */
+        
+        input[type=checkbox] {
+            display: none;
+        }
+        /*HAMBURGER MENU*/
+        
+        .hamburger {
+            display: none;
+            font-size: 24px;
+            user-select: none;
+        }
+        /* APPLYING MEDIA QUERIES */
+        
+        @media (max-width: 768px) {
+            .menu {
+                display: none;
+                position: absolute;
+                background-color: teal;
+                right: 0;
+                left: 0;
+                text-align: center;
+                padding: 16px 0;
+            }
+            .menu li:hover {
+                display: inline-block;
+                background-color: #4c9e9e;
+                transition: 0.3s ease;
+            }
+            .menu li+li {
+                margin-top: 12px;
+            }
+            input[type=checkbox]:checked~.menu {
+                display: block;
+            }
+            .hamburger {
+                display: block;
+            }
+            .dropdown {
+                left: 50%;
+                top: 30px;
+                transform: translateX(35%);
+            }
+            .dropdown li:hover {
+                background-color: #4c9e9e;
+            }
+        }
+    </style>
+
+    <img src="" alt="">
+
+    <center>
+        <img src="/home/francis/Documents/njabini health centre/img/head.jpg" width="1000" height="300" alt="">
+
+        <img src="/home/francis/Documents/njabini health centre/img/IMG_20220715_112020_830.jpg" width="1000" height="400" alt="">
+    </center>
+    <h1>Njabini Health Centre</h1>
+    <h2>Njabini Health Centre is a Ministry of Health basic health centre located in Njabani/Kiburu (Nbi-Nakuru Highway. Branch To The Left At Flyover Up To Njabini Town) Kinangop in Nyandarua County. As of 2021, the facility was fully operational with a
+    </h2>
+    <h2 style="color: ;green">These are the heads and their roles</h2>
+    <ul>
+        <U><B>DIRECTOR OF MEDICAL SERVICES</B></U>
+    </ul>
+    <OL>
+        <LI>
+            <U>Roles and Responsibilities</U>
+        </LI>
+        <li>Undertaking general diagnosis, care treatment and rehabilitation of surgical patients;</li>
+        <li>Carrying out specialized clinical care;</li>
+        <li> Training, consulting and performing emergency and elective general surgical operations;
+        </li>
+        <li>Carrying out medical legal services;</li>
+        <li>Undertaking health research;</li>
+        <li>Analyzing medical data for reports.</li>
+    </OL>
+    <br>
+    <ul>
+        |
+        <LI>
+            <B>PHAMACY</B>
+        </LI>
+    </ul>
+    <ol>
+        <li><u><b>Roles and Responsibilities<b><u></u></li>
+        <li>Coordinate delivery of pharmaceutical care services for both inpatient and outpatient;
+        </li>
+        <li> Management of patients/clients requiring specialized pharmaceutical services;</li>
+        <li> Supervision of pharmaceutical technologists and support staff deployed in the pharmacy department;</li>
+        <li>Conduct routine training to brief clinicians on updates related to pharmaceutical products and information;</li>
+        <li> Coordinate pharmacovigilance activities and ensure patient safety is guaranteed;</li>
+        <li>Carrying out research in clinical matters; </li>
+        <li>Developing and implementing therapeutic drug monitoring plans.</li>
+    </ol>
+    <br>
+    <ul>
+        <li><b><u>MEDICAL OFFICERS</u></b></li>
+    </ul>
+    <OL>
+        <li><u>Roles and Responsibilities</u></li>
+        <li>Diagnose, care and treat clients;</li>
+        <li>Perform medical and surgical procedures;</li>
+        <li>Prepare and respond to emergencies and disasters;</li>
+        <li>Participate in management of medicines, medical instruments and equipment;</li>
+        <li>Provide health education;</li>
+        <li>Teach and coach medical students, nursing students and clinical officer interns;</li>
+        <li>Prepare clinical documents for legal and medical purposes.</li>
+    </OL>
+
+    <br>
+
+    <ul><b><u>Medical Laboratory Technician</u></b></ul>
+    <ol>
+        <li><u>Roles and Responsibilities</u></li>
+        <li>scrutinizing laboratory requisition forms/specimens;</li>
+        <li>Preparing clients for specimen collection; of the specimen; </li>
+        <li>Preparation and submission of patient laboratory reports for management.
+        </li>
+    </ol>
+    <br>
+
+    <ul><b><u>HEALTH RECORDS AND INFORMATION ASSISTANT</u></b></ul>
+    <LI>
+        <U>Roles and Responsibilities</U>
+    </LI>
+    <ol>
+        <li>Receiving patients at hospital' reception;</li>
+        <li>Registering and booking appointment for patients to clinics and consultants;</li>
+        <li>and retrieving medical records documents;</li>
+        <li>Capturing data from service points;</li>
+        <li>Maintaining record safety and confidentiality;</li>
+        <li>Balancing daily bed returns;</li>
+        <li> and maintaining- master index and updating patient master index;</li>
+        <li>patients to the consultants and speciality clinics;</li>
+        <li>Assigning codes to diseases and surgical procedure according to the International Statistical classification of diseases and` procedures in medicine;</li>
+        <li>Preparing medical records and reports.</li>
+    </ol>
+    <br>
+
+</body>
+<footer>
+    <p class="copyright">&copy;Copyright @Dr.Francis 2022</p>
+    <style>
+        footer {
+            position: relative;
+            height: 50px;
+            width: 100%;
+            background-color: gray;
+        }
+        
+        p.copyright {
+            position: absolute;
+            width: 100%;
+            color: #fff;
+            line-height: 40px;
+            font-size: 0.7em;
+            text-align: center;
+            bottom: 0;
+        }
+    </style>
+
+</html>
+</body>
+
+</html>
